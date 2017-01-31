@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet"/>
+
+        <title>calculette</title>
+    </head>
+    <body>
+        <table>
+       <tr>
+           <td colspan="4" id="ecran"></td>
+           <div id="affiche"></div>
+       </tr>
+       <tr>
+           <td><input type="button" id="calc_btn" value="1" onclick="afficher(1)"/></td>
+           <td><input type="button" id="calc_btn" value="2" onclick="afficher(2)"/></td>
+           <td><input type="button" id="calc_btn" value="3" onclick="afficher(3)"/></td>
+           <td><input type="button" id="calc_btn" value="+" onclick="afficher('+')"/></td>
+       </tr>
+       <tr>
+           <td><input type="button" id="calc_btn" value="4"onclick="afficher(4)"/></td>
+           <td><input type="button" id="calc_btn" value="5"onclick="afficher(5)"/></td>
+           <td><input type="button" id="calc_btn" value="6"onclick="afficher(6)"/></td>
+           <td><input type="button" id="calc_btn" value="-"onclick="afficher('-')"/></td>
+       </tr>
+       <tr>
+           <td><input type="button" id="calc_btn" value="7"onclick="afficher(7)"/></td>
+           <td><input type="button" id="calc_btn" value="8"onclick="afficher(8)"/></td>
+           <td><input type="button" id="calc_btn" value="9"onclick="afficher(9)"/></td>
+           <td><input type="button" id="calc_btn" value="*"onclick="afficher('*')"/></td>
+       </tr>
+       <tr>
+           <td id="zero"><input type="button" class="calc_btn" value="0"onclick="afficher(0)"/></td>
+           <td colspan="2" id="egal"><input type="button" class="calc_btn" value="=" onclick="somme()"/></td>
+           <td id="slash"><input type="button" class="calc_btn" value="/" onclick="afficher('/')"/></td>
+       </tr>
+    </body>
+    <script>
+        function afficher(n){
+            document.getElementById("affiche").innerHTML = document.getElementById("affiche").innerHTML + n;
+            //document.getElementById("affiche").innerHTML += n;
+        }
+        function somme(){
+    
+        }
+    </script>
+</html>
